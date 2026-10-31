@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelDefinition" format=3 uid="uid://b18a5gxn11a1f"]
+
+[ext_resource type="Script" uid="uid://dki866egftasx" path="res://scripts/level_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+boss_title = "Eclipse Cult Leader"
+boss_name = "Master Phlegon"
+year = "1243"
+story = "The Eclipse Cult has stolen the Braunerkopf family's secret flame! Sir Reiner Braunerkopf must reclaim it and pass on the duty to protect it to the generations that follow."
+time_limit = 120.0
+ground_tint = Color(0.62, 0.72, 0.57, 1)

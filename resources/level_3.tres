@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelDefinition" format=3 uid="uid://xg5sobejuaa"]
+
+[ext_resource type="Script" uid="uid://dki866egftasx" path="res://scripts/level_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+boss_title = "The Most Powerful Eclipse Monster"
+boss_name = "Ugarit"
+year = "2026"
+story = "Reginald recovered the flame and passed on the duty to protect it. Now the Eclipse Corporation has stolen it to create flame-spewing monsters! The task falls to his Gen Z descendant, Robbie Braunerkopf. Can he reclaim the flame and pass its legacy on?"
+time_limit = 150.0
+attack_duration = 0.2
+attack_cooldown = 0.4
+ground_tint = Color(0.72, 0.54, 0.55, 1)
+enemy_health = 2
+boss_health = 18
+boss_fireball_scale = 0.8
+boss_corner_travel_time = 0.8
+enemy_speed_bonus = 26.0
+fast_fireball_speed = 300.0

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelDefinition" format=3 uid="uid://c0iiibx8i3xdf"]
+
+[ext_resource type="Script" uid="uid://dki866egftasx" path="res://scripts/level_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+boss_title = "Eclipse Institution Director"
+boss_name = "Mr. Halley"
+year = "1853"
+story = "Reiner reclaimed the flame and passed on a message to his descendants: never let it get away. Centuries later, the Eclipse Institution has stolen it again. His gentleman descendant, Reginald Braunerkopf, now inherits the task. Can he uphold the promise?"
+time_limit = 135.0
+attack_duration = 0.22
+attack_cooldown = 0.42
+ground_tint = Color(0.65, 0.67, 0.75, 1)
+enemy_health = 2
+boss_health = 15
+enemy_speed_bonus = 13.0
+retreat_speed_scale = 0.3
+special_warning = 1.0
+special_fireball_speed = 240.0

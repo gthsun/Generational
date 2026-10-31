@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c0vw15ebrdirp"]
+
+[ext_resource type="Script" uid="uid://dy3gj0k0xu3dl" path="res://scripts/game.gd" id="1"]
+[ext_resource type="Script" uid="uid://wse62jm1ymor" path="res://scripts/game_assets.gd" id="2"]
+[ext_resource type="Script" uid="uid://b3hrdv7adug7i" path="res://scripts/arena.gd" id="3"]
+[ext_resource type="Script" uid="uid://bbvq6d0jpy12" path="res://scripts/powerups.gd" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="5"]
+[ext_resource type="Script" uid="uid://be5kfrj67d00y" path="res://scripts/enemy_manager.gd" id="6"]
+[ext_resource type="Script" uid="uid://bc6ym5ysrhdf7" path="res://scripts/player_effects.gd" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/projectiles.tscn" id="8"]
+[ext_resource type="Script" uid="uid://ddgaw151q2m44" path="res://scripts/hud.gd" id="9"]
+[ext_resource type="Script" uid="uid://nno30tvpv4vp" path="res://scripts/music.gd" id="10"]
+[ext_resource type="Script" uid="uid://drw8gakpv8uep" path="res://scripts/sound_effects.gd" id="11"]
+[ext_resource type="Script" uid="uid://b4i10678185kt" path="res://scripts/boss_victory_audio.gd" id="12"]
+
+[ext_resource type="Script" path="res://scripts/input_controls.gd" id="13"]
+
+[node name="Eclipse" type="Node2D" unique_id=1835348614]
+script = ExtResource("1")
+
+[node name="Assets" type="Node" parent="." unique_id=106963174]
+script = ExtResource("2")
+
+[node name="World" type="Node2D" parent="." unique_id=634334477]
+
+[node name="Arena" type="Node2D" parent="World" unique_id=1600502557]
+script = ExtResource("3")
+
+[node name="Powerups" type="Node2D" parent="World" unique_id=1688722677]
+script = ExtResource("4")
+
+[node name="Actors" type="Node2D" parent="World" unique_id=1494051919]
+y_sort_enabled = true
+
+[node name="Enemies" type="Node2D" parent="World/Actors" unique_id=537129860]
+y_sort_enabled = true
+script = ExtResource("6")
+
+[node name="Player" parent="World/Actors" unique_id=1838146094 instance=ExtResource("5")]
+position = Vector2(560, 410)
+
+[node name="PlayerEffects" type="Node2D" parent="World" unique_id=1321316900]
+script = ExtResource("7")
+
+[node name="Projectiles" parent="World" unique_id=2118099700 instance=ExtResource("8")]
+
+[node name="HUD" type="Node2D" parent="." unique_id=1726709838]
+script = ExtResource("9")
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=2079715993]
+script = ExtResource("10")
+
+[node name="SoundEffects" type="Node" parent="." unique_id=1357999887]
+script = ExtResource("11")
+
+[node name="BossVictoryAudio" type="Node" parent="." unique_id=1276598]
+script = ExtResource("12")
+
+[node name="InputControls" type="Node" parent="."]
+script = ExtResource("13")
