@@ -18,7 +18,7 @@ func enter_level(index: int) -> void:
 	assert(game.state == "playing" and game.wave == 0 and game.enemies.grunts.size() == 4)
 
 func run() -> void:
-	game = load("res://main.tscn").instantiate()
+	game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
 	game.set_process(false)
 	assert(game.state == "title" and game.assets.title_card != null and game.assets.firebar_frames.size() == 5)

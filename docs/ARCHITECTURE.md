@@ -1,6 +1,6 @@
 # Game architecture
 
-Open `main.tscn` in Godot to inspect the scene tree. The controller coordinates level state and update order; it does not own actor movement, attack, health, projectile or UI state.
+Open `scenes/main.tscn` in Godot to inspect the scene tree. The controller coordinates level state and update order; it does not own actor movement, attack, health, projectile or UI state.
 
 ```text
 Eclipse                         scripts/game.gd

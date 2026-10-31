@@ -7,7 +7,7 @@ func press(game, code: int) -> void:
 	event.pressed = true
 	game._unhandled_key_input(event)
 func run() -> void:
-	var game = load("res://main.tscn").instantiate()
+	var game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
 	game.set_process(false)
 	for level in range(4):

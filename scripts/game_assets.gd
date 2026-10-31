@@ -16,25 +16,25 @@ var forcefield_frames: Array[Texture2D] = []
 var heart: Texture2D
 
 func _ready() -> void:
-	title_card = load("res://Title.png")
+	title_card = load("res://assets/sprites/ui/Title.png")
 	for i in range(3):
-		forcefield_frames.append(load("res://Forcefield/sprite_%d.png" % i))
+		forcefield_frames.append(load("res://assets/sprites/effects/Forcefield/sprite_%d.png" % i))
 	for i in range(5):
-		firebar_frames.append(load("res://Firebar/sprite_%d.png" % i))
+		firebar_frames.append(load("res://assets/sprites/ui/Firebar/sprite_%d.png" % i))
 	for i in range(5):
-		power_frames.append(load("res://Powers/sprite_%d.png" % i))
+		power_frames.append(load("res://assets/sprites/ui/Powers/sprite_%d.png" % i))
 	for i in range(Rules.LEVEL_COUNT * 13):
-		player_frames.append(load("res://GodotPlayer/sprite_%02d.png" % i))
-		grunt_frames.append(load("res://EclipseGrunt/sprite_%02d.png" % i))
-		boss_frames.append(load("res://EclipseBoss/sprite_%02d.png" % i))
+		player_frames.append(load("res://assets/sprites/characters/GodotPlayer/sprite_%02d.png" % i))
+		grunt_frames.append(load("res://assets/sprites/characters/EclipseGrunt/sprite_%02d.png" % i))
+		boss_frames.append(load("res://assets/sprites/characters/EclipseBoss/sprite_%02d.png" % i))
 	for i in range(9):
-		fire_frames.append(load("res://Fireball/sprite_%d.png" % i))
+		fire_frames.append(load("res://assets/sprites/effects/Fireball/sprite_%d.png" % i))
 	for i in range(7):
-		slash_frames.append(load("res://Slash/sprite_%d.png" % i))
+		slash_frames.append(load("res://assets/sprites/effects/Slash/sprite_%d.png" % i))
 	for i in range(4):
-		boom_frames.append(load("res://Boom/sprite_%d.png" % i))
-	heart = load("res://Heart.png")
+		boom_frames.append(load("res://assets/sprites/effects/Boom/sprite_%d.png" % i))
+	heart = load("res://assets/sprites/ui/Heart.png")
 	for i in range(17):
-		clock_frames.append(load("res://Clock/sprite_%02d.png" % i))
+		clock_frames.append(load("res://assets/sprites/ui/Clock/sprite_%02d.png" % i))
 	for i in range(Rules.LEVEL_COUNT):
-		grass_frames.append(load("res://grass/sprite_%d.png" % i))
+		grass_frames.append(load("res://assets/sprites/environment/grass/sprite_%d.png" % i))

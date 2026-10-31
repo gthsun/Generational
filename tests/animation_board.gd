@@ -4,7 +4,7 @@ var walk_time = 0.0
 var font = ThemeDB.fallback_font
 
 func _ready() -> void:
-	var controller = load("res://main.tscn").instantiate()
+	var controller = load("res://scenes/main.tscn").instantiate()
 	add_child(controller)
 	controller.set_process(false)
 	controller.hide()

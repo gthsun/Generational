@@ -7,7 +7,7 @@ var remaining = 0
 func _ready() -> void:
 	for sound_name in ["boss_defeated", "final_boss_defeated"]:
 		var voice = AudioStreamPlayer.new()
-		voice.stream = load("res://sounds/%s.wav" % sound_name)
+		voice.stream = load("res://assets/audio/sfx/%s.wav" % sound_name)
 		voice.volume_db = 0
 		add_child(voice)
 		voice.finished.connect(on_finished)

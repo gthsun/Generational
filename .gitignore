@@ -10,12 +10,12 @@ Thumbs.db
 # Generated screenshots (keep source art and import settings)
 /tests/*.png
 /tests/*.png.import
-/preview.png
-/preview.png.import
+/tests/screenshots/preview.png
+/tests/screenshots/preview.png.import
 
 # Unused alternate audio; retain locally
-/sounds/final_boss_defeated2.wav
-/sounds/final_boss_defeated2.wav.import
+/assets/audio/sfx/final_boss_defeated2.wav
+/assets/audio/sfx/final_boss_defeated2.wav.import
 
 # Local exports, reports, and credentials
 /build/

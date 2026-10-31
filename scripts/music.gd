@@ -7,11 +7,11 @@ var game_over_track: AudioStreamMP3
 var exposition_track: AudioStreamMP3
 
 func _ready() -> void:
-	wave_track = load("res://Wave.mp3").duplicate()
-	boss_track = load("res://Boss.mp3").duplicate()
-	menu_track = load("res://MainMenu.mp3").duplicate()
-	game_over_track = load("res://GameOver.mp3").duplicate()
-	exposition_track = load("res://Exposition.mp3").duplicate()
+	wave_track = load("res://assets/audio/music/Wave.mp3").duplicate()
+	boss_track = load("res://assets/audio/music/Boss.mp3").duplicate()
+	menu_track = load("res://assets/audio/music/MainMenu.mp3").duplicate()
+	game_over_track = load("res://assets/audio/music/GameOver.mp3").duplicate()
+	exposition_track = load("res://assets/audio/music/Exposition.mp3").duplicate()
 	for track in [wave_track, boss_track, menu_track, game_over_track, exposition_track]:
 		track.loop = true
 	volume_db = -7

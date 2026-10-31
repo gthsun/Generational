@@ -11,7 +11,7 @@ var menu_voice: AudioStreamPlayer
 
 func _ready() -> void:
 	for sound_name in NAMES:
-		streams[sound_name] = load("res://sounds/%s.wav" % sound_name)
+		streams[sound_name] = load("res://assets/audio/sfx/%s.wav" % sound_name)
 	menu_voice = AudioStreamPlayer.new()
 	menu_voice.name = "Menu"
 	add_child(menu_voice)

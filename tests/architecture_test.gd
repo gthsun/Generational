@@ -3,7 +3,7 @@ var defeated_count := 0
 func _initialize() -> void:
 	call_deferred("run")
 func run() -> void:
-	var scene = load("res://main.tscn")
+	var scene = load("res://scenes/main.tscn")
 	var first = scene.instantiate()
 	var second = scene.instantiate()
 	root.add_child(first)

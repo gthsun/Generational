@@ -31,6 +31,14 @@ After Game Over, choose **Retry Level** or **Start Over**. Defeating the final b
 
 ## Development
 
+Project folders:
+
+- `assets/sprites/`: characters, effects, environment, and interface artwork.
+- `assets/audio/`: music and sound effects.
+- `scenes/`: main scene and reusable actor scenes.
+- `scripts/`, `shaders/`, and `resources/`: game logic, rendering, and level settings.
+- `docs/` and `tests/`: architecture notes and development checks.
+
 Level stories and settings live in `resources/level_*.tres`. Player and enemy behaviors are split into child-node scripts in `scripts/`.
 
 Run automated checks with Python 3 and a Godot executable:

@@ -1,6 +1,6 @@
 extends "res://scripts/game_component.gd"
 func _ready() -> void:
-	var controller = load("res://main.tscn").instantiate()
+	var controller = load("res://scenes/main.tscn").instantiate()
 	add_child(controller)
 	controller.set_process(false)
 	controller.hide()

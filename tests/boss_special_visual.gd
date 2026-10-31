@@ -8,7 +8,7 @@ func capture(path: String) -> void:
 	RenderingServer.force_draw()
 	root.get_texture().get_image().save_png(path)
 func run() -> void:
-	var game = load("res://main.tscn").instantiate()
+	var game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
 	game.set_process(false)
 	await create_timer(0.5).timeout

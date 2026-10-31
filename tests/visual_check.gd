@@ -28,7 +28,7 @@ func capture() -> void:
 		await save_frame("res://tests/animation_phase_%d.png" % phase)
 	root.remove_child(board)
 	board.queue_free()
-	var game = load("res://main.tscn").instantiate()
+	var game = load("res://scenes/main.tscn").instantiate()
 	root.add_child(game)
 	game.set_process(false)
 	game.refresh_view()
