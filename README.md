@@ -52,3 +52,7 @@ See [the architecture guide](docs/ARCHITECTURE.md) for code structure and [credi
 ## License
 
 Source code is available under the [MIT License](LICENSE). Artwork, music, sound effects, story text, and other creative assets are **not** covered by that license. See [credits](CREDITS.md) for details.
+
+## Credits
+
+Music and art by me (Geethan). Sounds from https://ci.itch.io/400-sounds-pack.
